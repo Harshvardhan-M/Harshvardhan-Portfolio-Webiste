@@ -73,8 +73,8 @@ export default function Home() {
           <span className="dim">Magar</span>
         </h1>
         <p className="hero-desc">
-          <strong>Full-stack developer</strong> and 2nd-year CS student at VIT Bhopal. I build real things — not
-          tutorials. Two production applications shipped, both live on GitHub.
+          <strong>Full-stack developer</strong> and 3rd-year CS student at VIT Bhopal. I build real things — not
+          tutorials. Three production applications shipped, all live on GitHub.
         </p>
         <div className="hero-ctas">
           <a href="#projects" className="btn btn-primary">
@@ -123,7 +123,7 @@ export default function Home() {
         <div className="about-grid">
           <div className="about-text fade-in">
             <p>
-              I&apos;m a 2nd-year Computer Science student at <strong>VIT Bhopal</strong>. In my first year, instead of
+              I&apos;m a 3rd-year Computer Science student at <strong>VIT Bhopal</strong>. In my first two years, instead of
               stopping at coursework, I built two complete applications from scratch — designed, coded, debugged,
               deployed, and documented entirely on my own.
             </p>
@@ -133,7 +133,7 @@ export default function Home() {
               GitHub Actions for automated deployments.
             </p>
             <p>
-              I&apos;m not going to pretend I know everything — I&apos;m 2 years into a 4-year degree. But I learn fast,
+              I&apos;m not going to pretend I know everything — I&apos;m 3 years into a 4-year degree. But I learn fast,
               I move independently, and I don&apos;t stop at the first roadblock. That&apos;s the kind of intern I am.
             </p>
           </div>
@@ -181,12 +181,42 @@ export default function Home() {
       <section id="projects">
         <p className="section-tag">// projects</p>
         <h2>Things I&apos;ve built</h2>
-        <p className="section-sub">Both are live. Both are on GitHub. Neither was a tutorial.</p>
+        <p className="section-sub">All three are live. All three are on GitHub. None were tutorials.</p>
 
         <div className="projects-grid">
-          {/* Project 1 */}
+          {/* Project 1 - Anomaly Detection */}
           <div className="project-card fade-in">
-            <div className="project-number">01 / 02</div>
+            <div className="project-number">01 / 03</div>
+            <div className="project-date">Feb 2026 – Jun 2026</div>
+            <div className="project-title">Anomaly Detection Research Platform</div>
+            <p className="project-desc">
+              An interactive research web platform showcasing a novel Hybrid LSTM-Transformer with adaptive threshold
+              learning for multivariate time series anomaly detection in logistics networks.
+            </p>
+            <ul className="project-highlights">
+              <li>F1=0.90 — outperforms LSTM, Transformer, and IsolationForest baselines by 7–20%</li>
+              <li>Adaptive threshold mechanism: +5.6% F1 improvement validated via ablation study</li>
+              <li>In-browser CSV upload with real-time anomaly visualization and benchmark comparisons</li>
+              <li>3.2ms inference latency — deployed on Vercel with CI/CD on every GitHub push</li>
+            </ul>
+            <div className="project-stack">
+              <span className="tag">Next.js 16</span>
+              <span className="tag">TailwindCSS v4</span>
+              <span className="tag">TensorFlow.js</span>
+              <span className="tag">Recharts</span>
+              <span className="tag">TypeScript</span>
+              <span className="tag">Vercel</span>
+            </div>
+            <div className="project-links">
+              <a href="https://github.com/Harshvardhan-M/AD_Anomaly_Detection" target="_blank" rel="noopener noreferrer" className="project-link">
+                ↗ GitHub Repo
+              </a>
+            </div>
+          </div>
+
+          {/* Project 2 - Sales Forecast */}
+          <div className="project-card fade-in fade-in-delay-1">
+            <div className="project-number">02 / 03</div>
             <div className="project-date">Jan 2026 – Mar 2026</div>
             <div className="project-title">Sales Forecast Pro</div>
             <p className="project-desc">
@@ -216,7 +246,7 @@ export default function Home() {
 
           {/* Project 2 */}
           <div className="project-card fade-in fade-in-delay-2">
-            <div className="project-number">02 / 02</div>
+            <div className="project-number">03 / 03</div>
             <div className="project-date">Oct 2025 – Dec 2025</div>
             <div className="project-title">CoolieConnect</div>
             <p className="project-desc">
@@ -287,10 +317,10 @@ export default function Home() {
           <div className="skill-group fade-in fade-in-delay-1">
             <div className="skill-group-title">Data & ML</div>
             <ul className="skill-list">
-              <li>scikit-learn</li>
-              <li>pandas</li>
-              <li>Linear Regression</li>
-              <li>Data Preprocessing</li>
+              <li>PyTorch / TensorFlow.js</li>
+              <li>scikit-learn / pandas</li>
+              <li>LSTM &amp; Transformer</li>
+              <li>Anomaly Detection</li>
             </ul>
           </div>
           <div className="skill-group fade-in fade-in-delay-2">
